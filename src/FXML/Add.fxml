@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="396.0" prefWidth="607.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Add">
+   <children>
+      <Label alignment="CENTER" layoutX="68.0" layoutY="29.0" prefHeight="18.0" prefWidth="472.0" style="-fx-background-color: blue;" text="Add Item Form" textFill="WHITE" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="68.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" layoutX="67.0" layoutY="187.0" prefHeight="26.0" prefWidth="472.0" promptText="Quantity" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="67.19999999999999" />
+      <TextField fx:id="txtName" layoutX="68.0" layoutY="138.0" prefHeight="26.0" prefWidth="472.0" promptText="Item_Name" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="67.0" />
+      <TextField fx:id="txtDescription" layoutX="67.0" layoutY="288.0" prefHeight="26.0" prefWidth="472.0" promptText="Item_Description" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="67.19999999999999" />
+      <TextField fx:id="txtPrice" layoutX="67.0" layoutY="236.0" prefHeight="26.0" prefWidth="472.0" promptText="Price" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="67.19999999999999" />
+      <Label layoutX="74.0" layoutY="99.0" prefHeight="18.0" prefWidth="60.0" text="Item ID  :" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="453.2" />
+      <Button fx:id="btnAdd" layoutX="68.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnAddAction" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: blue;" text="Add" textFill="WHITE" />
+      <Label fx:id="lblOderId" alignment="CENTER" layoutX="142.0" layoutY="99.0" prefHeight="18.0" prefWidth="148.0" text="#0001" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="317.0" />
+      <Button fx:id="btnView" layoutX="326.0" layoutY="342.0" maxHeight="30.0" maxWidth="100.0" mnemonicParsing="false" onAction="#btnViewAction" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: lightgreen;" text="View Items" />
+      <Button fx:id="btnRemove" layoutX="440.0" layoutY="342.0" maxWidth="262.0" mnemonicParsing="false" onAction="#btnRemoveAction" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: lightgreen;" text="Remove" AnchorPane.leftAnchor="440.0" />
+   </children>
+</AnchorPane>

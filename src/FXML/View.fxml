@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="366.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.View">
+   <children>
+      <TableView fx:id="tblItem" layoutX="24.0" layoutY="106.0" prefHeight="200.0" prefWidth="551.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="25.0">
+        <columns>
+          <TableColumn fx:id="colItemId" prefWidth="92.20001602172852" text="ItemID" />
+          <TableColumn fx:id="colName" prefWidth="125.79997253417969" text="Name" />
+            <TableColumn fx:id="colQty" prefWidth="75.20001220703125" text="Qty" />
+            <TableColumn fx:id="colPrice" prefWidth="89.0" text="Price" />
+            <TableColumn fx:id="colDescription" prefWidth="166.20001220703125" text="Description" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnReload" layoutX="429.0" layoutY="324.0" mnemonicParsing="false" onAction="#btnReloadaction" prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: lightgreen;" text="Reload" AnchorPane.leftAnchor="429.0" />
+      <Label alignment="CENTER" layoutX="21.0" layoutY="28.0" prefHeight="46.0" prefWidth="551.0" style="-fx-background-color: blue;" text="View Items" textFill="WHITE" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="28.0">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
